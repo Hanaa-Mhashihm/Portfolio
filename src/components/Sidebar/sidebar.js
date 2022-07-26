@@ -1,7 +1,7 @@
 import { Link, NavLink } from 'react-router-dom';
 import './sidebar.scss';
-import LogoS from '../../assets/images/logo-s.png';
-import LogoSub from '../../assets/images/logo_sub.png';
+import LogoS from '../../assets/images/H 1.png';
+import LogoSub from '../../assets/images/Hanaa.png';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faEnvelope, faHome, faUser} from '@fortawesome/free-solid-svg-icons';
 import {faGithub, faLinkedin, faYoutube} from "@fortawesome/free-brands-svg-icons"
@@ -32,7 +32,7 @@ const Sidebar = () => (
             </li>
 
             <li>
-                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/hanaa-hashim-14a4a7206">
+                <a target="_blank" rel="noreferrer" href="https://github.com/Hanaa-Mhashihm">
                     <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
                 </a>
             </li>
