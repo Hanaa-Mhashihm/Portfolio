@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Loader from 'react-loaders';
 import { Link } from 'react-router-dom';
 import LogoTitle from '../../assets/images/H 1.png';
 import AnimatedLetters from '../AnimatedLetters/animate';
@@ -6,7 +7,7 @@ import './home.scss'
 import Logo from './Logo/logo';
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArray = [' ','H', 'a', 'n', 'a', 'a']
+    const nameArray = [' ', 'H', 'a', 'n', 'a', 'a']
     const jobArray = ['W', 'e', 'b', '  ', 'D', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.']
 
     useEffect(() => {
@@ -16,6 +17,7 @@ const Home = () => {
     }, [])
     
     return (
+        <>
         <div className="container home-page">
             <div className="text-zone">
                 <h1> 
@@ -35,6 +37,8 @@ const Home = () => {
 
             <Logo />
         </div>
+        <Loader type="pacman" />
+        </>
     )
 } 
 
